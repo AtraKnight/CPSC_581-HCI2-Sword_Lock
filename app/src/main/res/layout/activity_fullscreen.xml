@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,16 +11,6 @@
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
          TextureView, etc. -->
-    <TextView
-        android:id="@+id/fullscreen_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:keepScreenOn="true"
-        android:text="@string/dummy_content"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp"
-        android:textStyle="bold" />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -47,6 +38,24 @@
                 android:textColor="#80D8FF" />
 
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="king arthurs one and only"
+            android:translationX="100dp"
+            app:srcCompat="@drawable/sword" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="331dp"
+            android:layout_height="269dp"
+            android:translationX="50dp"
+            android:translationY="400dp"
+            app:srcCompat="@drawable/rock"
+            android:contentDescription="patricks home" />
+
     </FrameLayout>
 
 </FrameLayout>
