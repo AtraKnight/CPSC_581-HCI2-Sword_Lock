@@ -79,13 +79,11 @@ public class MainActivity extends AppCompatActivity {
                     case DragEvent.ACTION_DRAG_ENDED   :
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_ENDED");
 
-                        // Do nothing
                         break;
 
                     case DragEvent.ACTION_DROP:
                         Log.d(msg, "ACTION_DROP event");
 
-                        // Do nothing
                         break;
                     default: break;
                 }
@@ -93,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*img.setOnTouchListener(new View.OnTouchListener() {
+        img.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -107,7 +105,8 @@ public class MainActivity extends AppCompatActivity {
                     return false;
                 }
             }
-        });*/
-    }
+        });
 
+    }
 }
+
