@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="809dp"
+        android:layout_height="1292dp"
+        app:srcCompat="@drawable/blade"
+        tools:layout_editor_absoluteX="-187dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="663dp"
+        android:layout_height="460dp"
+        app:srcCompat="@drawable/hilt"
+        tools:layout_editor_absoluteX="-126dp"
+        tools:layout_editor_absoluteY="-190dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="343dp"
+        android:layout_marginTop="496dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/glyph1"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="441dp" />
+
+    <ImageView
+        android:id="@+id/glyph2"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <ImageView
+        android:id="@+id/glyph3"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="198dp" />
+
+    <ImageView
+        android:id="@+id/glyph4"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <ImageView
+        android:id="@+id/glyph5"
+        android:clickable="true"
+        android:focusable="true"
+
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <ImageView
+        android:id="@+id/glyph6"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
+        app:srcCompat="@drawable/tempGlyph"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
