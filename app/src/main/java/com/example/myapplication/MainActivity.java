@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        */
+
 
         img.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
         //drag doesn't work as intended
 
-         /*
+         */
 
         //listener that waits for user to click on the hilt
         img.setOnClickListener(new View.OnClickListener() {
@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-          */
+
 
 
     }
