@@ -44,7 +44,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
     <ImageView
         android:id="@+id/glyph2"
@@ -58,7 +58,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
     <ImageView
         android:id="@+id/glyph3"
@@ -72,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
     <ImageView
         android:id="@+id/glyph4"
@@ -86,7 +86,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
     <ImageView
         android:id="@+id/glyph5"
@@ -100,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
     <ImageView
         android:id="@+id/glyph6"
@@ -113,6 +113,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tempGlyph" />
+        app:srcCompat="@drawable/tempglyph" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

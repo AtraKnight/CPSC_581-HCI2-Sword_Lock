@@ -111,12 +111,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
         img.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), MainActivity2.class);
                 startActivity(intent);
             }
         });
+
 
     }
 }

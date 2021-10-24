@@ -12,9 +12,11 @@
         android:layout_width="392dp"
         android:layout_height="717dp"
         android:layout_marginTop="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sword"
-        tools:layout_editor_absoluteX="9dp" />
+        app:srcCompat="@drawable/sword" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -34,8 +36,10 @@
         android:layout_marginTop="256dp"
         android:clickable="true"
         android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hilt"
-        tools:layout_editor_absoluteX="34dp" />
+        app:srcCompat="@drawable/hilt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
