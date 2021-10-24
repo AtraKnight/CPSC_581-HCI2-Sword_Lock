@@ -1,6 +1,9 @@
 package com.example.myapplication;
+//to check password
+import java.util.Arrays;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -81,15 +84,25 @@ public class MainActivity2 extends AppCompatActivity {
     //password entry, no validation yet returns to main activity
 
     void enterPassword(int i){
-        /*
+
         if(entry<6) {
             password[entry] = i;
             entry++;
-        }else{
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
         }
-        */
+        else if(entry == 6){
+            validatePassword(password);
+        }
+
+    }
+    void validatePassword(int [] p){
+        int[] c = {1,2,3,4,5,6};
+
+        if(Arrays.equals(p,c)){
+            //do if true
+        }
+        else{
+            // do if false
+        }
     }
 
 }

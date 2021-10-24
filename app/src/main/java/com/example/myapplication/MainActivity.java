@@ -37,8 +37,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         img=(ImageView)findViewById(R.id.imageView3);
-        /*
 
+        /* REMOVE this and REPLACE with Swipe Guestures
         //add dragging
         img.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -96,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+        */
 
         img.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -112,9 +113,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        drag doesn't work as intended
 
-         */
+        //drag doesn't work as intended
+
+         /*
 
         //listener that waits for user to click on the hilt
         img.setOnClickListener(new View.OnClickListener() {
@@ -123,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+          */
 
 
     }
