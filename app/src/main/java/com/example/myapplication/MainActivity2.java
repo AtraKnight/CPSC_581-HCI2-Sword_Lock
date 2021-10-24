@@ -35,6 +35,9 @@ public class MainActivity2 extends AppCompatActivity {
         g5=(ImageView)findViewById(R.id.glyph5);
         g6=(ImageView)findViewById(R.id.glyph6);
 
+
+
+//glyph click functionality
         g1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 g1.setVisibility(View.INVISIBLE);
@@ -44,40 +47,49 @@ public class MainActivity2 extends AppCompatActivity {
         });
         g2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                g1.setVisibility(View.INVISIBLE);
+                g2.setVisibility(View.INVISIBLE);
                 enterPassword(2);
             }
         });
         g3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                g1.setVisibility(View.INVISIBLE);
+                g3.setVisibility(View.INVISIBLE);
                 enterPassword(3);
             }
         });
         g4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                g1.setVisibility(View.INVISIBLE);
+                g4.setVisibility(View.INVISIBLE);
                 enterPassword(4);
             }
         });
         g5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                g1.setVisibility(View.INVISIBLE);
+                g5.setVisibility(View.INVISIBLE);
                 enterPassword(5);
             }
         });
         g6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                g1.setVisibility(View.INVISIBLE);
+                g6.setVisibility(View.INVISIBLE);
                 enterPassword(6);
             }
         });
 
     }
 
+    //password entry, no validation yet returns to main activity
+
     void enterPassword(int i){
-        password[entry]= i;
-        entry++;
+        /*
+        if(entry<6) {
+            password[entry] = i;
+            entry++;
+        }else{
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        }
+        */
     }
 
 }
