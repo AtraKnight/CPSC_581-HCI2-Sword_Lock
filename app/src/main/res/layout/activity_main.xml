@@ -28,7 +28,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rock" />
-
+    <!-- the hilt,
+    added clickable trait to use as a button
+     -->
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="342dp"

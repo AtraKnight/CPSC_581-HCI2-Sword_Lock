@@ -37,6 +37,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/rock" />
 
+    <!-- Clickable Glyphs -->
     <ImageView
         android:id="@+id/glyph1"
         android:layout_width="46dp"

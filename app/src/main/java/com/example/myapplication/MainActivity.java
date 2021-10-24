@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         img=(ImageView)findViewById(R.id.imageView3);
         /*
 
+        //add dragging
         img.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -115,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
          */
 
-
+        //listener that waits for user to click on the hilt
         img.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), MainActivity2.class);
