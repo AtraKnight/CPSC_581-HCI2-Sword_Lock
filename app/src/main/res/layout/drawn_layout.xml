@@ -19,7 +19,7 @@
         android:layout_height="460dp"
         app:srcCompat="@drawable/hilt"
         tools:layout_editor_absoluteX="-126dp"
-        tools:layout_editor_absoluteY="-190dp" />
+        tools:layout_editor_absoluteY="-205dp" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -34,65 +34,65 @@
 
     <ImageView
         android:id="@+id/glyph1"
-        android:clickable="true"
-        android:focusable="true"
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="441dp" />
 
     <ImageView
         android:id="@+id/glyph2"
-        android:clickable="true"
-        android:focusable="true"
-
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="136dp" />
 
     <ImageView
         android:id="@+id/glyph3"
-        android:clickable="true"
-        android:focusable="true"
-
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="198dp" />
 
     <ImageView
         android:id="@+id/glyph4"
-        android:clickable="true"
-        android:focusable="true"
-
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="255dp" />
 
     <ImageView
         android:id="@+id/glyph5"
-        android:clickable="true"
-        android:focusable="true"
-
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="312dp" />
 
     <ImageView
         android:id="@+id/glyph6"
-        android:clickable="true"
-        android:focusable="true"
         android:layout_width="46dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/tempGlyph"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/tempglyph"
         tools:layout_editor_absoluteX="182dp"
         tools:layout_editor_absoluteY="380dp" />
 

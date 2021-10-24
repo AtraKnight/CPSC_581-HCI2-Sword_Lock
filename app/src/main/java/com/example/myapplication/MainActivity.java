@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        img=(ImageView)findViewById(R.id.imageView);
+        img=(ImageView)findViewById(R.id.imageView3);
 
         img.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -57,22 +57,18 @@ public class MainActivity extends AppCompatActivity {
 
                     case DragEvent.ACTION_DRAG_ENTERED:
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_ENTERED");
-                        int x_cord = (int) event.getX();
                         int y_cord = (int) event.getY();
                         break;
 
                     case DragEvent.ACTION_DRAG_EXITED :
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_EXITED");
-                        x_cord = (int) event.getX();
                         y_cord = (int) event.getY();
-                        layoutParams.leftMargin = x_cord;
                         layoutParams.topMargin = y_cord;
                         v.setLayoutParams(layoutParams);
                         break;
 
                     case DragEvent.ACTION_DRAG_LOCATION  :
                         Log.d(msg, "Action is DragEvent.ACTION_DRAG_LOCATION");
-                        x_cord = (int) event.getX();
                         y_cord = (int) event.getY();
                         break;
 
