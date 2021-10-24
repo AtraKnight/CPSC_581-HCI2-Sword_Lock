@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         img=(ImageView)findViewById(R.id.imageView3);
+        /*
 
         img.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -110,6 +111,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        drag doesn't work as intended
+
+         */
 
 
         img.setOnClickListener(new View.OnClickListener() {

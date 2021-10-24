@@ -10,17 +10,21 @@
         android:id="@+id/imageView6"
         android:layout_width="809dp"
         android:layout_height="1292dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/blade"
-        tools:layout_editor_absoluteX="-187dp"
         tools:layout_editor_absoluteY="48dp" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="663dp"
         android:layout_height="460dp"
-        app:srcCompat="@drawable/hilt"
-        tools:layout_editor_absoluteX="-126dp"
-        tools:layout_editor_absoluteY="-205dp" />
+        android:layout_marginBottom="464dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/hilt" />
 
     <ImageView
         android:id="@+id/imageView4"
