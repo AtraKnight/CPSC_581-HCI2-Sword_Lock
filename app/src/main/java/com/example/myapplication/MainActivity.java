@@ -5,6 +5,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -18,6 +19,13 @@ import android.view.View;
 
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+
+//to send to new activity
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
 
 public class MainActivity extends AppCompatActivity {
     ImageView img;
@@ -100,6 +108,13 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     return false;
                 }
+            }
+        });
+
+        img.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), MainActivity2.class);
+                startActivity(intent);
             }
         });
 
