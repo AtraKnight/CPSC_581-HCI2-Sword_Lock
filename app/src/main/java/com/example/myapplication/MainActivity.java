@@ -137,8 +137,14 @@ public class MainActivity extends AppCompatActivity {
 
         img.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this){
             public void onSwipeTop(){
-                img.setVisibility(View.INVISIBLE);
+                img.animate().translationY(-800).setDuration(500);
                 img2.animate().translationY(-800).setDuration(500);
+
+            }
+            public void onSwipeBottom(){
+                img.animate().translationY(0).setDuration(500);
+                img2.animate().translationY(0).setDuration(500);
+                img.setVisibility(View.VISIBLE);
             }
         });
 
