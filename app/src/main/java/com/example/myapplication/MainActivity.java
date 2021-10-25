@@ -16,6 +16,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.GestureDetector;
+import android.view.GestureDetector.SimpleOnGestureListener;
+import android.view.MotionEvent;
+import android.view.View.OnTouchListener;
 
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -29,6 +33,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     ImageView img;
+    ImageView img2;
     String msg;
     private android.widget.RelativeLayout.LayoutParams layoutParams;
 
@@ -37,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         img=(ImageView)findViewById(R.id.imageView3);
-
+        img2=(ImageView)findViewById(R.id.imageView);
         /* REMOVE this and REPLACE with Swipe Guestures
         //add dragging
         img.setOnLongClickListener(new View.OnLongClickListener() {
@@ -121,8 +126,19 @@ public class MainActivity extends AppCompatActivity {
         //listener that waits for user to click on the hilt
         img.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(), MainActivity2.class);
-                startActivity(intent);
+
+                //Intent intent = new Intent(v.getContext(), MainActivity2.class);
+                //startActivity(intent);
+            }
+        });
+
+
+        //swipe Gesture
+
+        img.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this){
+            public void onSwipeTop(){
+                img.setVisibility(View.INVISIBLE);
+                img2.animate().translationY(-800).setDuration(500);
             }
         });
 

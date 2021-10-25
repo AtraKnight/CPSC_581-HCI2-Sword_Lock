@@ -102,6 +102,12 @@ public class MainActivity2 extends AppCompatActivity {
         }
         else{
             // do if false
+            g1.setVisibility(View.VISIBLE);
+            g2.setVisibility(View.VISIBLE);
+            g3.setVisibility(View.VISIBLE);
+            g4.setVisibility(View.VISIBLE);
+            g5.setVisibility(View.VISIBLE);
+            g6.setVisibility(View.VISIBLE);
         }
     }
 
