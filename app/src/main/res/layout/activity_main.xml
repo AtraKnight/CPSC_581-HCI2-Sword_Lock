@@ -4,44 +4,115 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@drawable/bg"
 
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="392dp"
-        android:layout_height="717dp"
-        android:layout_marginTop="320dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sword" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="0dp"
-        android:layout_height="343dp"
-        android:layout_marginTop="496dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/rock" />
     <!-- the hilt,
     added clickable trait to use as a button
      -->
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="342dp"
-        android:layout_height="407dp"
-        android:layout_marginTop="256dp"
-        android:clickable="true"
-        android:focusable="true"
+        android:id="@+id/imageView"
+        android:layout_width="645dp"
+        android:layout_height="901dp"
+        android:translationY="550dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hilt" />
+        app:srcCompat="@drawable/sword2" />
+
+    <ImageView
+        android:id="@+id/oGlyph1"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="520dp"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        android:clickable = "false"
+        app:srcCompat="@drawable/stark" />
+
+    <ImageView
+        android:id="@+id/oGlyph2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oGlyph1"
+        android:clickable = "false"
+        app:srcCompat="@drawable/targaryen" />
+
+    <ImageView
+        android:id="@+id/oGlyph3"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oGlyph2"
+        android:clickable = "false"
+        app:srcCompat="@drawable/tully" />
+
+    <ImageView
+        android:id="@+id/oGlyph4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oGlyph3"
+        android:clickable = "false"
+        app:srcCompat="@drawable/tyrell" />
+
+    <ImageView
+        android:id="@+id/oGlyph5"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:clickable="false"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oGlyph4"
+        app:srcCompat="@drawable/stark" />
+
+    <ImageView
+        android:id="@+id/oGlyph6"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="4dp"
+        android:translationY="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oGlyph5"
+        android:clickable = "false"
+        app:srcCompat="@drawable/targaryen" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="411dp"
+        android:layout_height="127dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rock2" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

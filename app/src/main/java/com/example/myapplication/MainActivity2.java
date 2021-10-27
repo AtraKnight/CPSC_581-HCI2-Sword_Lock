@@ -1,3 +1,6 @@
+//DELETE THIS FILE NOW
+
+
 package com.example.myapplication;
 //to check password
 import java.util.Arrays;
@@ -31,12 +34,12 @@ public class MainActivity2 extends AppCompatActivity {
         entry = 0;
 
         //set glyphs
-        g1=(ImageView)findViewById(R.id.glyph1);
-        g2=(ImageView)findViewById(R.id.glyph2);
-        g3=(ImageView)findViewById(R.id.glyph3);
-        g4=(ImageView)findViewById(R.id.glyph4);
-        g5=(ImageView)findViewById(R.id.glyph5);
-        g6=(ImageView)findViewById(R.id.glyph6);
+        g1=(ImageView)findViewById(R.id.oGlyph1);
+        g2=(ImageView)findViewById(R.id.oGlyph2);
+        g3=(ImageView)findViewById(R.id.oGlyph3);
+        g4=(ImageView)findViewById(R.id.oGlyph4);
+        g5=(ImageView)findViewById(R.id.oGlyph5);
+        g6=(ImageView)findViewById(R.id.oGlyph6);
 
 
 
