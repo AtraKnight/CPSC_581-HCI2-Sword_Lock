@@ -3,6 +3,7 @@ package com.example.myapplication;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -102,23 +103,19 @@ public class MainActivity extends AppCompatActivity {
 
         if(Arrays.equals(code,password)){
             //do if true
+            g1.setVisibility(View.INVISIBLE);
+            g2.setVisibility(View.INVISIBLE);
+            g3.setVisibility(View.INVISIBLE);
+            g4.setVisibility(View.INVISIBLE);
+            g5.setVisibility(View.INVISIBLE);
+            g6.setVisibility(View.INVISIBLE);
             return true;
         }
         else{
+
             // do if false
             entry = 0;
-            f1.setAlpha(0.f);
-            f2.setAlpha(0.f);
-            f3.setAlpha(0.f);
-            f4.setAlpha(0.f);
-            f5.setAlpha(0.f);
-            f6.setAlpha(0.f);
-            g1.setVisibility(View.VISIBLE);
-            g2.setVisibility(View.VISIBLE);
-            g3.setVisibility(View.VISIBLE);
-            g4.setVisibility(View.VISIBLE);
-            g5.setVisibility(View.VISIBLE);
-            g6.setVisibility(View.VISIBLE);
+
             return false;
         }
     }
@@ -149,8 +146,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         int pull = sounds.load(this,R.raw.pull2,1);
-        int forest = sounds.load(this,R.raw.forest,1);
         int glow = sounds.load(this,R.raw.glow,1);
+        int first = sounds.load(this,R.raw.pull3,1);
 
         long glowdur = 1000;
 
@@ -253,8 +250,10 @@ public class MainActivity extends AppCompatActivity {
         img.setOnTouchListener(new OnSwipeTouchListener(MainActivity.this){
             public void onSwipeTop(){
                 if(drawn ==false) {
+                    sounds.play(first,1,1,0,0,.5f);
                     password = new int[]{0, 0, 0, 0, 0, 0};
                     Log.d("myTag", "num " + Float.toString(g1.getY()));
+                    Log.d("myTag", "sw " + Float.toString(img.getY()));
                     g1.animate().translationY(0).setDuration(500);
                     g2.animate().translationY(0).setDuration(500);
                     g3.animate().translationY(0).setDuration(500);
@@ -262,6 +261,7 @@ public class MainActivity extends AppCompatActivity {
                     g5.animate().translationY(0).setDuration(500);
                     g6.animate().translationY(0).setDuration(500);
                     Log.d("myTag", "num " + Float.toString(g1.getY()));
+                    Log.d("myTag", "sw " + Float.toString(img.getY()));
                     img.animate().translationY(img2.getY() - 1000).setDuration(500).setListener(new AnimatorListenerAdapter() {
                         @Override
                         public void onAnimationEnd(Animator animation) {
@@ -282,30 +282,66 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("myTag", "num " + Float.toString(img2.getY() - 900));
                 }
                 if (drawn ==true){
-                    g1.setVisibility(View.INVISIBLE);
-                    g2.setVisibility(View.INVISIBLE);
-                    g3.setVisibility(View.INVISIBLE);
-                    g4.setVisibility(View.INVISIBLE);
-                    g5.setVisibility(View.INVISIBLE);
-                    g6.setVisibility(View.INVISIBLE);
                     if(validatePassword()){
                         sounds.play(pull,1,1,0,0,1);
-                        img.animate().translationY(-3300).setDuration(1000);
-                        f1.animate().translationY(-3300).setDuration(1000);
-                        f2.animate().translationY(-3300).setDuration(1000);
-                        f3.animate().translationY(-3300).setDuration(1000);
-                        f4.animate().translationY(-3300).setDuration(1000);
-                        f5.animate().translationY(-3300).setDuration(1000);
-                        f6.animate().translationY(-3300).setDuration(1000).setListener(new AnimatorListenerAdapter() {
+                        synchronized (f6.animate().translationY(-3300).setDuration(1000).setListener(new AnimatorListenerAdapter() {
                             @Override
                             public void onAnimationEnd(Animator animation) {
                                 super.onAnimationEnd(animation);
+
+
+                                sounds.release();
                                 onDestroy();
                             }
-                        });
+                        })) {
+                            f1.animate().translationY(-3300).setDuration(1000);
+                            f2.animate().translationY(-3300).setDuration(1000);
+                            f3.animate().translationY(-3300).setDuration(1000);
+                            f4.animate().translationY(-3300).setDuration(1000);
+                            f5.animate().translationY(-3300).setDuration(1000);
+                            img.animate().translationY(-3300).setDuration(1000);
+
+                        }
 
                     }else{
                         drawn = false;
+
+
+                        /*
+
+                        synchronized (img.animate().translationY(img2.getY() - 1050).setDuration(400)) {
+                            g1.animate().translationY(-50).setDuration(400);
+                            g2.animate().translationY(-50).setDuration(400);
+                            g3.animate().translationY(-50).setDuration(400);
+                            g4.animate().translationY(-50).setDuration(400);
+                            g5.animate().translationY(-50).setDuration(400);
+                            g6.animate().translationY(-50).setDuration(400);
+                            f1.animate().translationY(-50).setDuration(400);
+                            f2.animate().translationY(-50).setDuration(400);
+                            f3.animate().translationY(-50).setDuration(400);
+                            f4.animate().translationY(-50).setDuration(400);
+                            f5.animate().translationY(-50).setDuration(400);
+                            f6.animate().translationY(-50).setDuration(400).setListener(new AnimatorListenerAdapter() {
+                                @Override
+                                public void onAnimationEnd(Animator animation) {
+                                    super.onAnimationEnd(animation);
+
+                                    reset();
+
+                                }
+                            });
+                        }
+                        */
+
+                        long fadeout = 500;
+                        synchronized (f1.animate().alpha(0.f).setDuration(fadeout)) {
+                            f2.animate().alpha(0.f).setDuration(fadeout);
+                            f3.animate().alpha(0.f).setDuration(fadeout);
+                            f4.animate().alpha(0.f).setDuration(fadeout);
+                            f5.animate().alpha(0.f).setDuration(fadeout);
+                            f6.animate().alpha(0.f).setDuration(fadeout);
+                        }
+
 
                     }
 
@@ -314,6 +350,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
             public void onSwipeBottom(){
+                sounds.play(first,1,1,0,0,.5f);
                 f1.setAlpha(0.f);
                 f2.setAlpha(0.f);
                 f3.setAlpha(0.f);
@@ -338,7 +375,7 @@ public class MainActivity extends AppCompatActivity {
                 g4.animate().translationY(900).setDuration(500);
                 g5.animate().translationY(900).setDuration(500);
                 g6.animate().translationY(900).setDuration(500);
-                img.animate().translationY(img2.getY()).setDuration(500);
+                img.animate().translationY(img2.getY()-100).setDuration(500);
                 Log.d("myTag", "bottom: "+Float.toString(img2.getY()));
                 drawn = false;
                 entry = 0;
@@ -397,6 +434,23 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void reset() {
+        synchronized (img.animate().translationY(img2.getY() - 1000).setDuration(100)){
+        f1.animate().translationY(0).setDuration(100);
+        f2.animate().translationY(0).setDuration(100);
+        f3.animate().translationY(0).setDuration(100);
+        f4.animate().translationY(0).setDuration(100);
+        f5.animate().translationY(0).setDuration(100);
+        f6.animate().translationY(0).setDuration(100);
+        g1.animate().translationY(0).setDuration(100);
+        g2.animate().translationY(0).setDuration(100);
+        g3.animate().translationY(0).setDuration(100);
+        g4.animate().translationY(0).setDuration(100);
+        g5.animate().translationY(0).setDuration(100);
+        g6.animate().translationY(0).setDuration(100);
+        }
     }
 
 }
