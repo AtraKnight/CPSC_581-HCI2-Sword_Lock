@@ -300,7 +300,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onAnimationEnd(Animator animation) {
                                 super.onAnimationEnd(animation);
-
+                                onDestroy();
                             }
                         });
 
@@ -398,5 +398,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
 
