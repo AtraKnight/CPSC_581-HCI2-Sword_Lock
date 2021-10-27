@@ -10,6 +10,7 @@ import android.animation.AnimatorSet;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -47,6 +48,12 @@ public class MainActivity extends AppCompatActivity {
     ImageView g4;
     ImageView g5;
     ImageView g6;
+    ImageView f1;
+    ImageView f2;
+    ImageView f3;
+    ImageView f4;
+    ImageView f5;
+    ImageView f6;
     int[] password;
     int[] code;
     int entry;
@@ -113,6 +120,9 @@ public class MainActivity extends AppCompatActivity {
         g4=(ImageView)findViewById(R.id.oGlyph4);
         g5=(ImageView)findViewById(R.id.oGlyph5);
         g6=(ImageView)findViewById(R.id.oGlyph6);
+
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.forest_sound);
+        mediaPlayer.start();
 
 
         /* REMOVE this and REPLACE with Swipe Guestures
@@ -264,8 +274,12 @@ public class MainActivity extends AppCompatActivity {
 
             g1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
+
+                    g1.setClickable(false);
                     g1.setVisibility(View.INVISIBLE);
                     enterPassword(1);
+                    f1=(ImageView)findViewById(R.id.glyph1);
+                    f1.setVisibility(View.VISIBLE);
 
                 }
             });
@@ -273,30 +287,40 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     g2.setVisibility(View.INVISIBLE);
                     enterPassword(2);
+                    f1=(ImageView)findViewById(R.id.glyph2);
+                    f1.setVisibility(View.VISIBLE);
                 }
             });
             g3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     g3.setVisibility(View.INVISIBLE);
                     enterPassword(3);
+                    f1=(ImageView)findViewById(R.id.glyph3);
+                    f1.setVisibility(View.VISIBLE);
                 }
             });
             g4.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     g4.setVisibility(View.INVISIBLE);
                     enterPassword(4);
+                    f1=(ImageView)findViewById(R.id.glyph4);
+                    f1.setVisibility(View.VISIBLE);
                 }
             });
             g5.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     g5.setVisibility(View.INVISIBLE);
                     enterPassword(5);
+                    f1=(ImageView)findViewById(R.id.glyph5);
+                    f1.animate().
                 }
             });
             g6.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     g6.setVisibility(View.INVISIBLE);
                     enterPassword(6);
+                    f1=(ImageView)findViewById(R.id.glyph6);
+                    f1.setVisibility(View.VISIBLE);
                 }
             });
 
