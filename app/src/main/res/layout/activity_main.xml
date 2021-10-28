@@ -28,7 +28,7 @@
         android:id="@+id/oGlyph1"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:layout_marginTop="275dp"
+        android:layout_marginTop="500dp"
         android:translationY="500dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

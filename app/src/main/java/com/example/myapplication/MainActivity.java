@@ -264,7 +264,7 @@ public class MainActivity extends AppCompatActivity {
                     g6.animate().translationY(0).setDuration(500);
                     Log.d("myTag", "num " + Float.toString(g1.getY()));
                     Log.d("myTag", "sw " + Float.toString(img.getY()));
-                    img.animate().translationY(img2.getY() - 1000).setDuration(500).setListener(new AnimatorListenerAdapter() {
+                    img.animate().translationY(img2.getY() - 800).setDuration(500).setListener(new AnimatorListenerAdapter() {
                         @Override
                         public void onAnimationEnd(Animator animation) {
                             super.onAnimationEnd(animation);
@@ -294,6 +294,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 sounds.release();
                                 onDestroy();
+                                System.exit(0);
                             }
                         })) {
                             f1.animate().translationY(-3300).setDuration(1000);
@@ -377,7 +378,7 @@ public class MainActivity extends AppCompatActivity {
                 g4.animate().translationY(900-200).setDuration(500);
                 g5.animate().translationY(900-200).setDuration(500);
                 g6.animate().translationY(900-200).setDuration(500);
-                img.animate().translationY(img2.getY()-300).setDuration(500);
+                img.animate().translationY(img2.getY()-100).setDuration(500);
                 Log.d("myTag", "bottom: "+Float.toString(img.getY()));
                 drawn = false;
                 entry = 0;
@@ -392,15 +393,16 @@ public class MainActivity extends AppCompatActivity {
             g1.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
-                    f1.animate().alpha(1f).setDuration(glowdur);
+                    f1.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(1);
+
 
                 }
             });
             g2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
-                    f2.animate().alpha(1f).setDuration(glowdur);
+                    f2.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(2);
                 }
             });
@@ -408,28 +410,28 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
 
-                    f3.animate().alpha(1f).setDuration(glowdur);
+                    f3.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(3);
                 }
             });
             g4.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
-                    f4.animate().alpha(1f).setDuration(glowdur);
+                    f4.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(4);
                 }
             });
             g5.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
-                    f5.animate().alpha(1f).setDuration(glowdur);
+                    f5.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(5);
                 }
             });
             g6.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
                     sounds.play(glow,1,1,0,0,1);
-                    f6.animate().alpha(1f).setDuration(glowdur);
+                    f6.animate().alpha(.6f).setDuration(glowdur);
                     enterPassword(6);
                 }
             });
