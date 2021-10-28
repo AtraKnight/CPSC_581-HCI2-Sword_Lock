@@ -47,28 +47,28 @@ import java.util.Arrays;
 
 
 public class MainActivity extends AppCompatActivity {
-    ImageView img;
-    ImageView img2;
+    public ImageView img;
+    public ImageView img2;
 
-    ImageView g1;
-    ImageView g2;
-    ImageView g3;
-    ImageView g4;
-    ImageView g5;
-    ImageView g6;
-    ImageView f1;
-    ImageView f2;
-    ImageView f3;
-    ImageView f4;
-    ImageView f5;
-    ImageView f6;
-    int[] password;
-    int[] code;
-    int entry;
-    boolean drawn;
+    public ImageView g1;
+    public ImageView g2;
+    public ImageView g3;
+    public ImageView g4;
+    public ImageView g5;
+    public ImageView g6;
+    public ImageView f1;
+    public ImageView f2;
+    public ImageView f3;
+    public ImageView f4;
+    public ImageView f5;
+    public ImageView f6;
+    public int[] password;
+    public int[] code;
+    public int entry;
+    public boolean drawn;
 
 
-    String msg;
+    public String msg;
     private android.widget.RelativeLayout.LayoutParams layoutParams;
 
     @Override
@@ -122,6 +122,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart(Bundle savedInstanceState){
         img=(ImageView)findViewById(R.id.imageView);
         img2=(ImageView)findViewById(R.id.imageView2);
+        Log.d("myTag", "sw " + Float.toString(img.getY()));
+
 
         //set glyphs
         g1=(ImageView)findViewById(R.id.oGlyph1);
@@ -369,14 +371,14 @@ public class MainActivity extends AppCompatActivity {
                 g4.setClickable(false);
                 g5.setClickable(false);
                 g6.setClickable(false);
-                g1.animate().translationY(900).setDuration(500);
-                g2.animate().translationY(900).setDuration(500);
-                g3.animate().translationY(900).setDuration(500);
-                g4.animate().translationY(900).setDuration(500);
-                g5.animate().translationY(900).setDuration(500);
-                g6.animate().translationY(900).setDuration(500);
-                img.animate().translationY(img2.getY()-100).setDuration(500);
-                Log.d("myTag", "bottom: "+Float.toString(img2.getY()));
+                g1.animate().translationY(900-200).setDuration(500);
+                g2.animate().translationY(900-200).setDuration(500);
+                g3.animate().translationY(900-200).setDuration(500);
+                g4.animate().translationY(900-200).setDuration(500);
+                g5.animate().translationY(900-200).setDuration(500);
+                g6.animate().translationY(900-200).setDuration(500);
+                img.animate().translationY(img2.getY()-300).setDuration(500);
+                Log.d("myTag", "bottom: "+Float.toString(img.getY()));
                 drawn = false;
                 entry = 0;
 
